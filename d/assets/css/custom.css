@@ -1,0 +1,279 @@
+
+/* Custom scrollbar styles styart */
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #232323; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1475E6; /* Color of the scrollbar thumb */
+    border-radius: 0px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1475E6; /* Color of the thumb on hover */
+    cursor: pointer;
+}
+
+/* For Firefox */
+scrollbar-width: thin; /* Makes the scrollbar thinner */
+scrollbar-color: #1475E6 #232323; /* thumb color and track color */
+/* Custom scrollbar styles end */
+
+
+/* Hide scrollbar start */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+/* Hide scrollbar end */
+
+/* Hide scrollbar on element still works start */
+.cusHideScrollBar {
+    overflow: hidden; /* Hide the scrollbar */
+    position: relative; /* Required for the pseudo-element */
+}
+
+.cusHideScrollBar::webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.cusHideScrollBar {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+}
+/* Hide scrollbar on element still works end */
+
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-size: initial; /* Reset to default browser size */
+}
+
+body h1 {
+  font-size: 32px; /* Custom size for h1 */
+}
+
+body h2 {
+  font-size: 28px; /* Custom size for h2 */
+}
+
+body h3 {
+  font-size: 24px; /* Custom size for h3 */
+}
+
+body h4 {
+  font-size: 20px; /* Custom size for h4 */
+}
+
+body h5 {
+  font-size: 16px; /* Custom size for h5 */
+}
+
+body h6 {
+  font-size: 14px; /* Custom size for h6 */
+}
+
+/* Article start */
+article {
+
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+article ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+}
+
+article li > * {
+    margin-left: -5px;
+}
+
+article li::marker {
+
+}
+
+article a {
+    color: #1475E6;
+}
+
+article a:hover {
+    color: #2C83E9;
+    text-decoration: underline;
+}
+
+article img {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+article blockquote {
+    border-left: 0.5rem solid rgb(255 255 255 / 15%);
+    background: rgb(0 0 0 / 25%);
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 1rem;
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+/* Article end */
+
+
+/* Fonts start */
+
+/* Archivo start */
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-Regular.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-Bold.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 400; /* Italic */
+    font-style: italic;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-Italic.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 500; /* Medium */
+    font-style: normal;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-Medium.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 500; /* Medium Italic */
+    font-style: italic;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-MediumItalic.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-SemiBold.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 600; /* SemiBold Italic */
+    font-style: italic;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-SemiBoldItalic.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 400; /* Regular Italic */
+    font-style: italic;
+    src: url('./assets/fonts/Archivo/woff2/Archivo-Regular.woff2') format('woff2'),
+         url('./assets/fonts/Archivo/woff/Archivo-Regular.woff') format('woff');
+}
+
+/* Archivo end */
+
+/* Fonts end */
+
+
+/* line-clamps start */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-5 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-6 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line-clamps end */
