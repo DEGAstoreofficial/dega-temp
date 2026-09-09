@@ -1,207 +1,184 @@
-<html class="bg-SoftBlack min-h-screen flex flex-col scroll-smooth font-archivo">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>DEGA Store</title>
-    <link rel="icon" sizes="52x52" href="./assets/images/image.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="tailwind-config.js"></script>
-    <link rel="stylesheet" href="./assets/css/custom.css">
-  </head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background: #212121; }
+  section[id] { scroll-margin-top: 88px; }
+  * { box-sizing: border-box; }
+  a { color: #1E88FF; text-decoration: none; }
+  a:hover { color: #6FB0FF; }
+  summary::-webkit-details-marker { display: none; }
+  summary { list-style: none; cursor: pointer; }
+  details[open] .dega-plus { transform: rotate(45deg); }
+  details[open] .dega-body { opacity: 1; }
+</style>
+</helmet>
+<div style="background:#212121;color:#EDEDED;font-family:'Instrument Sans',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh">
 
-  <body id="top" class="bg-transparent flex flex-col items-center flex-grow min-h-screen relative tracking-wide text-base leading-[1.5] break-words text-white">
-    <!-- main navbar start -->
+  <header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;padding:22px clamp(20px,5vw,72px);border-bottom:1px solid #383838;position:sticky;top:0;background:rgba(33,33,33,0.88);backdrop-filter:blur(10px);z-index:10">
+    <div style="display:flex;align-items:center;gap:10px;flex:none">
+      <img src="assets/dega-mark.png" alt="" aria-hidden="true" style="width:26px;height:26px;display:block" />
+      <span style="font-size:20px;font-weight:700;letter-spacing:-0.01em">DEGA</span>
+    </div>
+    <nav style="display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:14px 22px">
+      <a href="#points" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A8A8A8;white-space:nowrap;flex:none">What it does</a>
+      <a href="#faq" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A8A8A8;white-space:nowrap;flex:none">FAQ</a>
+      <a href="https://x.com/DEGAStoreX" target="_blank" rel="noreferrer" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;padding:9px 16px;border:1px solid #454545;border-radius:999px;color:#EDEDED;white-space:nowrap;flex:none">Follow on X</a>
+    </nav>
+  </header>
 
-    <!-- main navbar end -->
-
-    <!-- main middle start -->
-    <div class="w-full flex flex-col grow-1 overflow-hidden">
-
-    <div class="w-full h-full flex flex-col justify-center items-center p-[50px] gap-8 max-md:p-[15]">
-      <div class="w-full max-w-[1400px] flex flex-col justify-center items-center">
-        <h1 class="text-[80px] font-bold">DEGA</h1>
-        <h1 class="text-[68px] font-bold mt-[-40px]">STORE<h1>
-          <p class="mt-[-20px] font-bold text-[17px] text-LBlue">Your Games, Your Freedom</p>
+  <section style="position:relative;overflow:hidden;padding:clamp(72px,12vw,148px) clamp(20px,5vw,72px) clamp(64px,9vw,112px);border-bottom:1px solid #383838">
+    <div style="position:relative;max-width:1080px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#5FA8FF">In development</span>
+      <div style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;padding:clamp(56px,8vw,104px) 0;min-height:clamp(220px,30vw,360px)">
+        <img src="assets/dega-mark.png" alt="" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(200px,26vw,320px);height:auto;opacity:0.09;pointer-events:none;user-select:none" />
+        <h1 style="position:relative;margin:0;font-size:clamp(40px,8vw,96px);line-height:0.96;letter-spacing:-0.035em;font-weight:700;text-wrap:balance;color:#EDEDED">Free Your Games</h1>
       </div>
-      <div class="w-full max-w-[1400px] flex flex-col justify-center items-center gap-16">
-      <div class="w-full flex flex-col justify-center items-center p-[20px] rounded-md border border-solid border-white/10">
-        <p class="text-white/75">DEGA Store is a censorship-resistant and permissionless game store where only you have the power to stop yourself from selling your game. You can buy whatever game you want, and as long as you have your receipt (proof of purchase), your purchased games will always be with you. DEGA Store isn't here to be the middleman; it's here only to ensure that ultimately both the buyer and seller call the shots with each other without interference.</p>
+      <p style="margin:0;max-width:640px;font-size:clamp(17px,2vw,21px);line-height:1.55;color:#B4B4B4;text-wrap:pretty">DEGA is a censorship-resistant, permissionless game store. Sellers keep 100% of every sale and can't be cut off. Buyers keep a receipt that proves what they bought, forever. We are not the middleman, just the place both sides meet.</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px;margin-top:8px">
+        <a href="https://x.com/DEGAStoreX" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;background:#1E88FF;color:#212121;font-weight:600;font-size:15px;padding:14px 24px;border-radius:8px">Follow us on X</a>
+        <a href="#points" style="display:inline-flex;align-items:center;gap:10px;border:1px solid #454545;color:#EDEDED;font-size:15px;padding:14px 24px;border-radius:8px">See how it works</a>
       </div>
-      <div class="w-full flex flex-col gap-4 justify-center items-center">
-        <h2 class="text-h2 font-bold">Keep in touch</h2>
-        <p class="">Follow this project on X/Twitter and/or bookmark the site</p>
-        <div class="w-full flex flex-row justify-center items-center">
-          <a href="https://x.com/DEGAStoreX" target="_blank" class="w-auto bg-black/85 rounded-md border border-1 border-white/15 relative flex flex-row gap-4 justify-around items-center px-[20px] py-[10px] transition-all ease duration-[0.4s] hover:scale-[1.03]">
-            <img class="w-[25px]" src="https://image.nostr.build/4b38de750bec88a7977767bb69824a928927ed542fee96a258b0e7e4ee4c5b53.png">
-            <p class="font-bold grow-[1] mr-[10px]">Follow</p>
-          </a>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(24px,5vw,64px);margin-top:clamp(28px,5vw,56px);padding-top:32px;border-top:1px solid #383838;width:100%">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.02em">100%</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A8A8A">To the seller</span>
         </div>
-      </div>
-      <div class="w-full flex flex-row justify-center items-center">
-        <h2 class="text-h2 font-bold">Key points</h2>
-      </div>
-      <div class="w-full grid grid-cols-2 gap-4 max-md:grid-cols-1">
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Censorship-resistance</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">We can't delete your account, nor can we properly delete your store or your game product pages. Additionally, we can't stop you from selling your games or prevent people from buying whatever they want.</p>
-          </div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.02em">0</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A8A8A">Permissions needed</span>
         </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Permissionless</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">You do not need our permission to create an account, sell, or post anything.</p>
-          </div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.02em">DRV</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A8A8A">Instead of DRM</span>
         </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Moderation</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">While we can't delete your account, pages, or posts, or stop you from selling your games and preventing people from buying them, we can mark, hide, or block pages and posts. However, all moderation efforts can be bypassed by sellers and buyers. This results in both censorship resistance and quality control.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Interconnected stores</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">Game producers can set up their own store on their website that they control, and their game products will appear both on their site and on DEGA Store. So, even if we block a game from being sold, it can still be purchased on the producer's site.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Multiple payment methods</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">You will have the ability to sell your games using any payment method that we can integrate into DEGA Store's system. Bitcoin will, of course, be implemented, and depending on the technicalities of traditional payment systems, they will also be integrated. If one service denies you, another would be available for you to set up, and so on. <br><br>(Implementation is one aspect; your setup of each payment method is another.)</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">No revenue split</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">Since we are not a middleman between the buyer and seller, and payment setup is handled by the seller, the game producer receives 100% of the sale, and DEGA Store does not take a cut. DEGA Store's revenue stream is generated elsewhere.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">No single-point of failure</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">Since DEGA Store does not control account creation or manage them, and only has copies of pages, posts, and builds (assuming the studio has set things up correctly), it is not the one selling games or acting as an intermediary between the buyer and seller. Therefore, any attempt by a third party to pressure DEGA Store to stop a game producer from selling their game is impossible, even if DEGA faces the threat of having its banking services revoked.<br><br>Essentially, think of DEGA Store as a browser. Furthermore, in the event that DEGA Store goes under, sellers can still sell their games, and the store would remain functional (there would just be a small hiccup period of a worse user experience until sellers reconfigure/reset up their store with the same system). <br><br>A domain is not needed, and backend reconfiguration and setup by the seller using their own resources can be done, ensuring that sellers can get out of relying on DEGA Store.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Proof of purchase</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">For every purchase, you receive an encrypted receipt. As long as you have that receipt, it proves that you bought a specific game from a specific game producer, and it will always be attached to your account and cannot be removed.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Ownership clarity</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">To have clear wording regarding what the game producer is selling. Are they renting you their game with an unspecified date for revoking access (licensing), or are they genuinely trying to sell you a game so that you own a copy? Regardless of whether it is being sold or rented, you will clearly know what is being offered (more so that the best stores out there).</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">No DRM</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">DEGA Store will not have its own Digital Rights Management (DRM). Game producers can implement their own DRM; however, there will be a checkbox that they can tick if they do have it, so you would be informed.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Game launcher</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">A launcher designed to manage your games and installations, featuring continuously growing implementations.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">Backup builds</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">Users have the ability to back up or mirror the game builds of the games they purchased and can play those builds. However, there is no guarantee that older builds of a game will work, as it depends on the developers of the game and how it was set up.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold text-center">No forced updates</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">If there is an update for a game, you will be informed and given the option to update it. You will not be prevented from playing the game if you choose not to update, assuming this is possible based on how the game was developed (meaning that if the game developers make older builds unplayable).</p>
-          </div>
-        </div>
-      </div>
-      <div class="w-full flex flex-row justify-center items-center">
-        <h2 class="text-h2 font-bold">Teasers</h2>
-      </div>
-      <div class="w-full grid grid-cols-2 gap-4 max-md:grid-cols-1">
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full p-[20px]">
-            <p class="">Mod support?</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full p-[20px]">
-            <p class="">The return of (and modernization of) physical game copies?</p>
-          </div>
-        </div>
-      </div>
-      <div class="w-full flex flex-row justify-center items-center">
-        <h2 class="text-h2 font-bold">FAQ</h2>
-      </div>
-      <div class="w-full grid grid-cols-1 gap-8">
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold">Isn't this too good to be true?</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">On the surface, it may seem that way, but not in reality. It's not all sunshine and rainbows; it still requires considerable effort to make things work, even for the game seller behind the scenes. However, if everything is done correctly and as this continues to grow, it will improve, and freedoms will become more powerful.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold">Is all of this possible?</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">Yes, many of the systems that will be developed for DEGA Store have already been developed and implemented in a different project. The only system we are not 100% sure about is the multiple payment methods system, as we have not explored that yet. However, we are optimistic about it and will update this answer with good news in the future.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold">Since you aren't taking any cut from game sales, not even 1%, how are you able to make money to sustain DEGA Store?</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">Developers need storage and bandwidth for their game builds, as well as reliable speeds, so we will be providing that. Essentially, we are focused on building a strong backend infrastructure. This forms the initial core of our business model, and there are additional revenue streams to be implemented.</p>
-          </div>
-        </div>
-        <div class="flex flex-col w-full rounded-md border border-solid border-white/10 text-white/75 overflow-hidden">
-          <div class="w-full px-[20px] py-[10px] border-b border-solid border-white/10 bg-white/5">
-            <p class="font-bold">When will this go live?</p>
-          </div>
-          <div class="w-full p-[20px]">
-            <p class="">We are currently focused on a different project, and DEGA Store is certainly a larger endeavor than it. As soon as that project begins generating profits with decent margins, a percentage of those profits will be allocated to fund the development of DEGA Store, or we may seek investors to support it. However, please keep in mind that what is developed for that project will most likely be utilized for DEGA Store, so with that in mind, you can assume that we are already building it. We are in the final stages of planning, and the frontend design is being developed in our free time whenever possible.</p>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
+  </section>
 
+  <section style="padding:clamp(64px,9vw,112px) clamp(20px,5vw,72px);border-bottom:1px solid #383838">
+    <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(28px,4vw,56px)">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#1E88FF">01</span>
+        <h3 style="margin:0;font-size:20px;font-weight:600;letter-spacing:-0.01em">Sellers run their own store</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#A8A8A8">Your games will appear on DEGA, as well as your own site if desired, removing DEGA from being a single point of failure.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#1E88FF">02</span>
+        <h3 style="margin:0;font-size:20px;font-weight:600;letter-spacing:-0.01em">Buyers pay the seller directly</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#A8A8A8">No cut, no intermediary account. New or traditional payment rails, whichever the seller sets up.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#1E88FF">03</span>
+        <h3 style="margin:0;font-size:20px;font-weight:600;letter-spacing:-0.01em">The receipt is the proof</h3>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#A8A8A8">An encrypted receipt is attached to your account and can't be removed. Never lose it, never lose your right to a copy of a game.</p>
+      </div>
     </div>
-    <!-- main middle end -->
-  </body>
+  </section>
+
+  <section id="points" style="padding:clamp(64px,9vw,112px) clamp(20px,5vw,72px);border-bottom:1px solid #383838">
+    <div style="max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <h2 style="margin:0;font-size:clamp(30px,4.5vw,46px);font-weight:700;letter-spacing:-0.03em">Key points</h2>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A8A8A">Tap any point for detail</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px">
+        <sc-for list="{{ points }}" as="p" hint-placeholder-count="13">
+          <details style="background:#2A2A2A;border:1px solid #3A3A3A;border-radius:12px;padding:20px 22px">
+            <summary style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px">
+              <span style="display:flex;flex-direction:column;gap:8px">
+                <span style="font-size:17px;font-weight:600;letter-spacing:-0.01em;color:#EDEDED">{{ p.title }}</span>
+                <span style="font-size:14px;line-height:1.5;color:#A8A8A8">{{ p.claim }}</span>
+              </span>
+              <span class="dega-plus" style="flex:none;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border:1px solid #454545;border-radius:6px;color:#1E88FF;font-size:14px;line-height:1;transition:transform 180ms ease">+</span>
+            </summary>
+            <p class="dega-body" style="margin:16px 0 0;padding-top:16px;border-top:1px solid #3A3A3A;font-size:14px;line-height:1.65;color:#9C9C9C;text-wrap:pretty">{{ p.detail }}</p>
+          </details>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,8vw,96px) clamp(20px,5vw,72px);border-bottom:1px solid #383838">
+    <div style="max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:24px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#1E88FF">Teasers</span>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px">
+        <div style="border:1px dashed #454545;border-radius:12px;padding:28px;font-size:clamp(19px,2.4vw,24px);font-weight:600;letter-spacing:-0.01em;color:#CFCFCF">Mod support?</div>
+        <div style="border:1px dashed #454545;border-radius:12px;padding:28px;font-size:clamp(19px,2.4vw,24px);font-weight:600;letter-spacing:-0.01em;color:#CFCFCF">The return of physical copies?</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding:clamp(64px,9vw,112px) clamp(20px,5vw,72px);border-bottom:1px solid #383838">
+    <div style="max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);align-items:flex-start">
+      <h2 style="margin:0;flex:0 0 auto;font-size:clamp(30px,4.5vw,46px);font-weight:700;letter-spacing:-0.03em">FAQ</h2>
+      <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column">
+        <sc-for list="{{ faq }}" as="f" hint-placeholder-count="4">
+          <details style="border-top:1px solid #3A3A3A;padding:22px 0">
+            <summary style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px">
+              <span style="font-size:17px;font-weight:600;line-height:1.4;color:#EDEDED;text-wrap:pretty">{{ f.q }}</span>
+              <span class="dega-plus" style="flex:none;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border:1px solid #454545;border-radius:6px;color:#1E88FF;font-size:14px;line-height:1;transition:transform 180ms ease">+</span>
+            </summary>
+            <p style="margin:14px 0 0;max-width:62ch;font-size:15px;line-height:1.65;color:#A8A8A8;text-wrap:pretty">{{ f.a }}</p>
+          </details>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:clamp(56px,8vw,96px) clamp(20px,5vw,72px)">
+    <div style="max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="display:flex;align-items:center;gap:clamp(14px,2vw,22px)"><img src="assets/dega-mark.png" alt="" aria-hidden="true" style="width:clamp(30px,4vw,52px);height:auto;display:block" /><span style="font-size:clamp(30px,4vw,52px);font-weight:700;letter-spacing:-0.02em;line-height:1">DEGA</span></span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#8A8A8A">Free Your Games</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+        <span style="font-size:15px;color:#A8A8A8;max-width:34ch">Follow the project on X, or bookmark the site.</span>
+        <a href="https://x.com/DEGAStoreX" target="_blank" rel="noreferrer" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;padding:11px 20px;border:1px solid #454545;border-radius:999px;color:#EDEDED;white-space:nowrap">x.com/DEGAStoreX</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      points: [
+        { title: "Censorship resistance", claim: "We properly can't delete your account, store, or product pages.", detail: "We can't stop you from selling, and we can't stop anyone from buying. Removal isn't a lever we hold." },
+        { title: "Permissionless", claim: "No approval to sign up, sell, or post.", detail: "You do not need our permission to create an account, sell a game, or publish anything on it." },
+        { title: "Moderation, not removal", claim: "We can mark, hide, or block, never erase, and users can bypass our moderation.", detail: "Every moderation action can be bypassed by sellers and buyers who choose to. You get censorship resistance and quality control at the same time." },
+        { title: "Interconnected stores", claim: "Your store on your domain, mirrored on DEGA.", detail: "Products appear on both your site and DEGA. Even if we block a game here, it can still be bought from the producer directly." },
+        { title: "Multiple payment methods", claim: "Be it traditional payment methods or new ones, many will be supported.", detail: "If one payment processor denies you, set up another. We handle the integrations; you choose and configure which ones you use." },
+        { title: "No revenue split", claim: "The producer keeps 100% of the sale.", detail: "Payment setup belongs to the seller and we are not in the middle of it, so there is no cut to take. DEGA earns its revenue elsewhere." },
+        { title: "No single point of failure", claim: "Think of DEGA as a browser, not a shop.", detail: "We don't own accounts and we aren't the seller, so pressuring us to shut a producer down doesn't work, even if our banking is pulled. If DEGA goes under, sellers keep selling; no domain of ours is required." },
+        { title: "Proof of purchase", claim: "Every purchase issues an encrypted receipt.", detail: "The receipt proves you bought a specific game from a specific producer. It stays attached to your account and cannot be removed." },
+        { title: "Ownership clarity", claim: "Sold or rented, stated plainly and up front.", detail: "Licensing with revocable access and an outright sale are different things. Every listing says which one you're getting." },
+        { title: "DRV instead of DRM", claim: "A simple protection layer that respects the player.", detail: "Gamers hate DRM, game developers hate needing to use it, and while they love the idea of no-DRM, they don't want to be completely naked, so the solution is Digital Receipt Verification, a non-bulletproof simple protection layer that doesn't impact performance and doesn't require an online connection to work." },
+        { title: "Game launcher", claim: "Manage your games and installs in one place.", detail: "A launcher with a continuously growing set of implementations." },
+        { title: "Backup builds", claim: "Mirror the builds you own, and play them.", detail: "You can back up or mirror builds of games you purchased. Whether an older build still runs depends on how the developers built it." },
+        { title: "No forced updates", claim: "You're told about updates, not made to take them.", detail: "Choosing not to update won't lock you out of the game, as long as the developers haven't made older builds unplayable." }
+      ],
+      faq: [
+        { q: "Isn't this too good to be true?", a: "On the surface it can look that way. In practice it takes real work behind the scenes, including from the seller. Done correctly, it gets better and the freedoms get stronger as it grows." },
+        { q: "Is all of this actually possible?", a: "Yes. Most of these systems are already built and running in another project of ours. The one we haven't explored yet is multiple payment methods, and we're optimistic about it." },
+        { q: "If you take no cut, how do you make money?", a: "Developers need storage, bandwidth, and reliable speeds for their builds, and we provide that. Strong backend infrastructure is the core of the business model, with more revenue streams to come." },
+        { q: "When does it go live?", a: "We're focused on another project first. Once it turns a decent profit, a share funds DEGA, or we take on investors. Much of what we build there carries over, so assume DEGA is already underway: planning is in its final stages and the frontend is being built in spare time." }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
